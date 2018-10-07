@@ -1,7 +1,5 @@
 
-       <!-- <style>
-          .error {color: red;}
-        </style>-->
+
     {% extends "base.html" %}
 
     {% block content %}
@@ -11,21 +9,23 @@
               <table>
                 <tr>
                   <td> <label>Username:</td>
-                  <td> <input name="usr_name" type="text" value='{{hours}}' /></label></td>
+                  <td> <input name="usr_name" type="text" value='{{user_field}}' /></label> </td>
+                  <td class="error">{{user_error}}</td>
                 </tr>
                 <tr>
                   <td> <label>Password:</td>
-                  <td> <input name="pas_word" type="password" value='{{hours}}' /> </label> </td>
+                  <td> <input name="pas_word" type="password" value='{{pass_field}}' /> </label> </td>
+                  <td class="error">{{pass_error}}</td>
                 </tr> 
                 <tr>
                   <td> <label>Verify Password: </td>
-                  <td> <input name="ver_word" type="password" value='{{hours}}' /> </td>
-                 </label>
+                  <td> <input name="ver_word" type="password" value='{{veri_field}}' /> </label> </td>
+                  <td class="error">{{veri_error}}</td>
                 </tr>
                 <tr> 
                   <td> <label>Email Address: </td>
-                  <td> <input name="e_mail" type="test" value='{{hours}}' /> </td>
-                 </label>
+                  <td> <input name="e_mail" type="test" value='{{emal_field}}' /> </label> </td>
+                  <td class="error">{{emal_error}}</td>
                 </tr>
                 <tr>
                   <td> <input type="submit" value="Sign Up" /> </td>
