@@ -6,17 +6,31 @@
 
     {% block content %}
    
-        <h1>Valimate Time</h1>
+        <h1>Sign up for Alexbook!</h1>
             <form method='POST'>
-              <label>Hours (24-hour format)
-                <input name="hours" type="text" value='{{hours}}' />
-              </label>
-              <p class="error">{{hours_error}}</p>
-              <label>Minutes
-                <input name="minutes" type="text" value='{minutes}' />
-              </label>
-              <p class="error">{{minutes_error}}</p>
-              <input type="submit" value="Convert" />
+              <table>
+                <tr>
+                  <td> <label>Username:</td>
+                  <td> <input name="usr_name" type="text" value='{{hours}}' /></label></td>
+                </tr>
+                <tr>
+                  <td> <label>Password:</td>
+                  <td> <input name="pas_word" type="password" value='{{hours}}' /> </label> </td>
+                </tr> 
+                <tr>
+                  <td> <label>Verify Password: </td>
+                  <td> <input name="ver_word" type="password" value='{{hours}}' /> </td>
+                 </label>
+                </tr>
+                <tr> 
+                  <td> <label>Email Address: </td>
+                  <td> <input name="e_mail" type="test" value='{{hours}}' /> </td>
+                 </label>
+                </tr>
+                <tr>
+                  <td> <input type="submit" value="Sign Up" /> </td>
+                </tr>
+            </table>
             </form>
 
             {% endblock %}
